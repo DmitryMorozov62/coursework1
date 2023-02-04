@@ -28,15 +28,15 @@ public class Main {
     public static void printSum() {
         int sum = 0;
         for (Employee value : employee) {
-            sum += value.salary;
+            sum += value.getSalary();
         }
         System.out.println("сумма затрат на зарплаты в месяц " + sum + " рублей");
     }
 
     public static void printMaxSalary() {
-        int maxSalary = employee[0].salary;
+        int maxSalary = employee[0].getSalary();
         for (Employee value : employee) {
-            final int s = value.salary;
+            final int s = value.getSalary();
             if (s > maxSalary) {
                 maxSalary = s;
             }
@@ -45,9 +45,9 @@ public class Main {
     }
 
     public static void printMinSalary() {
-        int minSalary = employee[0].salary;
+        int minSalary = employee[0].getSalary();
         for (Employee value : employee) {
-            final int s = value.salary;
+            final int s = value.getSalary();
             if (s < minSalary) {
                 minSalary = s;
             }
@@ -57,7 +57,7 @@ public class Main {
     public static void printAverageSalary() {
         int sum = 0;
         for (Employee value : employee) {
-            sum += value.salary;
+            sum += value.getSalary();
         }
         double average = (double)sum / employee.length;
         System.out.println("средняя зарплата " + average + " рублей");
@@ -65,7 +65,7 @@ public class Main {
 
     public static void printAllNamePerson() {
         for (Employee value : employee) {
-            System.out.println(value.person);
+            System.out.println(value.getPerson());
         }
     }
 }

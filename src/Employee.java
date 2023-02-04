@@ -1,9 +1,9 @@
 public class Employee {
-    String person;
-    int department;
-    int salary;
+    private String person;
+    private int department;
+    private int salary;
     static int id = 1;
-    int idObject;
+    private int idObject;
 
     public Employee(String person, int department, int salary) {
         this.person = person;
